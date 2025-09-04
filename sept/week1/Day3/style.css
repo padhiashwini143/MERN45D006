@@ -1,0 +1,75 @@
+h3{
+    background-color: blueviolet;
+}
+
+/* selectors
+1.simple selector
+2.combinator selector
+3.psuedo class selector
+4.attribute selector
+*/
+
+/* simple selector
+=>id selector
+=>class selector
+=>tag selector
+=>universal selector
+=>group name selector
+*/
+
+
+/* this is the id selector */
+#paragraph{
+    background-color: aqua;
+}
+
+/* class selector */
+.para{
+    background-color: cadetblue;
+}
+
+/* tag name selector */
+h3{
+    background-color: blueviolet;
+}
+
+h3,h5,h6{
+    color: brown;
+    font-size: 10px;
+}
+
+*{
+    font-size: 60px;
+    font-family: monospace;
+}
+
+/* priroty order
+id
+class
+tag
+group
+universal
+ */
+
+
+ /* combinator selector
+ =>descedent selector
+ =>direct child selector
+ =>general sibling selector
+  */
+
+  /* alt direct with indirect child */
+ /* #parent >p{
+    background-color: red;
+ } */
+
+ /* only direct child */
+
+  /* #parent >p{
+    background-color: red;
+ } */
+
+ /* adjacent sibling selector */
+  /* #parent >p{
+    background-color: blue;
+ } */
