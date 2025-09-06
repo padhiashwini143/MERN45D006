@@ -1,0 +1,88 @@
+nav{
+    width: 100vw;
+    /* background-color: blue; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    box-shadow: 4px 6px 16px -12px black;
+}
+
+.logo{
+    width: 40%;
+    /* /* background-color: red; */
+} 
+.logo p{
+    color: blue;
+}
+.logo p span{
+    color: orangered;
+}
+
+.nav_list{
+    width: 40%;
+    /* background-color: yellow; */
+}
+
+.nav_list ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav_list ul li:hover{
+    color: orangered;
+    cursor: pointer;
+}
+
+.login{
+    width: 350px;
+    border: 1px solid blue;
+    padding: 5px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp6c_V3jfx8kydbztd2L2zwsmOeqYC5pGIEw&s");
+    background-size: cover;
+}
+
+form{
+    padding: 5px;
+}
+
+form .login-gr{
+    padding: 10px;
+    background-color: red;
+    border: 1px slolid black;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+form.login-gr label{
+    font-size: 20px;
+    color: red;
+}
+
+form.login-gr input{
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: -1px -1px 5px 1px blue;
+}
+
+form .login-gr input::placeholder{
+    color: red;
+}
+
+form.login-gr input :focus{
+    background-color: orangered;
+}
+form button{
+    width: 80px;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 25px;
+    color: white;
+    cursor: pointer;
+}
