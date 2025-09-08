@@ -4,7 +4,7 @@ nav{
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    font-size: 15px;
+    font-size: 10px;
     box-shadow: 4px 6px 16px -12px black;
 }
 
@@ -82,7 +82,7 @@ form button{
     padding: 10px;
     border-radius: 10px;
     border: none;
-    margin-left: 25px;
+    margin-left: 120px;
     color: white;
     cursor: pointer;
 }
