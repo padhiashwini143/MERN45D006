@@ -24,3 +24,12 @@ document.querySelector("form").onsubmit=(e)=>{
     e.preventDefault();
     console.log("form submitted")
 }
+
+const form=document.querySelector("form");
+
+const inputs=document.getElementsByTagName("input");
+
+form.addEventListener("submit",(eve)=>{
+    eve.preventDefault();
+    let name=inputs
+})

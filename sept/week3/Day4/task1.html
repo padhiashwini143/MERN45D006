@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register & Login</title>
+  <link rel="stylesheet" href="task1.css">
+  <style>
+    /* Hide login form by default */
+    #loginForm {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Register Form -->
+    <form id="registerForm" class="register-form">
+      <h2>Create Account</h2>
+      
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email">
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password">
+
+      <button type="submit">Register</button>
+
+      <div class="login-link">
+        Already have an account? 
+        <a href="#" onclick="showLogin()">Login</a>
+      </div>
+    </form>
+
+    <!-- Login Form -->
+    <form id="loginForm" class="register-form">
+      <h2>Login</h2>
+      
+      <label for="loginEmail">Email</label>
+      <input type="email" id="loginEmail" placeholder="Enter your email">
+
+      <label for="loginPassword">Password</label>
+      <input type="password" id="loginPassword" placeholder="Enter your password">
+
+      <button type="submit">Login</button>
+
+      <div class="login-link">
+        Don’t have an account? 
+        <a href="#" onclick="showRegister()">Create Account</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function showLogin() {
+      document.getElementById("registerForm").style.display = "none";
+      document.getElementById("loginForm").style.display = "block";
+    }
+
+    function showRegister() {
+      document.getElementById("loginForm").style.display = "none";
+      document.getElementById("registerForm").style.display = "block";
+    }
+  </script>
+</body>
+</html>

@@ -46,8 +46,14 @@ console.log(strArr)
 // //function calling
 // printSomething()
 
-let printSomething=function(a){
-    console.log("printing",a)
-}
-printSomething(10)
+// let printSomething=function(a){
+//     console.log("printing",a)
+// }
+// printSomething(10)
+
+
+
+
+
+
 

@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom,#ff6a88,#c538a3,#7e46bf,#3c4cd4);
+    background-size: cover;
+}
+
+.login-container {
+    padding: 20px;
+    width: 100%;
+    max-width: 400px; /* Limit the width of the card */
+}
+
+.login-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+}
+
+.input-group i {
+    color: #888;
+    margin-right: 10px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 5px 0;
+    font-size: 1em;
+    background-color: transparent;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align to the left */
+    margin-bottom: 25px;
+    padding-left: 5px; /* Adjust as needed for alignment */
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #d1498b; /* Color of the checkbox when checked */
+    width: 16px;
+    height: 16px;
+}
+
+.remember-me label {
+    color: #555;
+    font-size: 0.95em;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #d1498b; /* Pink/Purple from the image */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+}
+
+.login-btn:hover {
+    background-color: #b93c76; /* Slightly darker on hover */
+}
+
+.or-divider {
+    color: #aaa;
+    margin-bottom: 25px;
+    position: relative;
+    font-size: 0.9em;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 35%; /* Adjust line length */
+    height: 1px;
+    background-color: #eee;
+}
+
+.or-divider::before {
+    left: 0;
+}
+
+.or-divider::after {
+    right: 0;
+}
+
+.social-login-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; /* Space between buttons */
+    margin-bottom: 30px;
+}
+
+.social-btn {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.facebook-btn {
+    background-color: #fff;
+    color: #3b5998; /* Facebook blue */
+    border-color: #3b5998;
+}
+
+.facebook-btn:hover {
+    background-color: #e6e6fa; /* Light blue on hover */
+}
+
+.google-btn {
+    background-color: #fff;
+    color: ; /* Google red */
+    border-color: #ea4335;
+}
+
+.google-btn:hover {
+    background-color: #fff0f0; /* Light red on hover */
+}
+
+.social-btn i {
+    font-size: 1.1em;
+}
+
+.signup-link {
+    font-size: 0.95em;
+    color: #777;
+}
+
+.signup-link a {
+    color: rgb(76, 76, 76);
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
