@@ -1,5 +1,5 @@
-import React from 'react'
-import Home from '../../../day1/FirstReactClass/src/component/Home'
+
+import React from 'react-router'
 import About from './component/About'
 import GetId from './component/GetId'
 import Course from './component/Course'
