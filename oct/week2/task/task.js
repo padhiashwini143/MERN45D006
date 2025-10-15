@@ -20,7 +20,7 @@ app.put("/put", (req,res) =>{
     console.log("put request called",data)
     return res.send("put request called")
 })
-app.delete("/api", (req,res) =>{
+app.delete("/delete", (req,res) =>{
     const data=req.body;
     console.log("delete request called",data)
     return res.send("delete request called")
