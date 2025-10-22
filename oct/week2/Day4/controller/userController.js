@@ -1,5 +1,6 @@
 const User = require("../model/userModel")
 const bcrypt = require("bcrypt")
+const jwt =require("jsonwebtoken")
 
 exports.register = async (req, res) => {
     try {
@@ -64,6 +65,28 @@ exports.Login = async (res,req) => {
 
         bcrypt.compare(password, existingUser.password, function (err, result){
             if(result){
+
+
+       const token = jwt.sign({existingUser}, 'user_key', { expiresIn: '1h' });
+
+       if(!token){
+        return res.status(404).json({
+                    status:false,
+                    message:"something wrong in token creation",
+                    existingUser
+                })
+       }else{
+        return res.status(200).json({
+                    status:true,
+                    message:"login success",
+                    existingUser,
+                    token
+                })
+       }
+
+
+
+
                 return res.status(200).json({
                     status:true,
                     message:"login success",
